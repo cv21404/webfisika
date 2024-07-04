@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Image on Button Click</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Change Image on Button Click</h1>
+        
+        <!-- Image Display -->
+        <img src="{{ image_url }}" width="400" height="300" alt="Image">
+        
+        <!-- Button to Change Image -->
+        <form action="/switch_image" method="GET">
+            <input type="hidden" name="current_image" value="{{ image_url }}">
+            <button type="submit">Change Image</button>
+        </form>
+    </div>
+</body>
+<script>
+    
+</script>
+</html>
